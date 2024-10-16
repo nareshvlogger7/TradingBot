@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <h1>Welcome Back!</h1>
+                <p>Please log in to continue.</p>
+            </div>
+        </div>
+        <div class="right">
+            <form id="loginForm">
+                <div id="step1">
+                    <h5>Login</h5>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+
+                    <label for="apiKey">API Key:</label>
+                    <input type="text" id="apiKey" required>
+
+                    <label for="token">Token:</label>
+                    <input type="text" id="token" required>
+
+                    <button type="button" id="nextBtn">Next</button>
+                </div>
+                <div id="step2" style="display:none;">
+                    <h5>Set Trading Parameters</h5>
+                    <label for="stopLoss">Stop Loss (%):</label>
+                    <input type="number" id="stopLoss" required>
+
+                    <label for="profit">Profit Target (%):</label>
+                    <input type="number" id="profit" required>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" id="backBtn">Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
